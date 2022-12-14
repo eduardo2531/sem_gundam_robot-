@@ -8,7 +8,6 @@ original: https://github.com/gundam-global-challenge/gundam_robot.git
 ![GUNDAM Gazebo Simulation](imgs/gundam_AKG.jpg)
 
 
-
 How to setup workspace
 ----------------------
 
@@ -32,18 +31,23 @@ $ roslaunch gundam_rx78_gazebo gundam_rx78_world.launch
 To control joint angles, try a sample script.
 
 ```
+Para hacer que el Gundam Camine, debe estar ejecutandose la simulación de gazebo del paso anterior y luego en una nueva consola ejecutar cualquiera de los siguientes comandos:
 
+Solo ejecutar una vez:
+----------------------
 
+#cd al ambiente del proyecto
+#Ejecutar una vez el siguiente comando
+$ source devel/setup.bash
+```
 Experimental
 ------------
 
 You can run "Robot"-like walking pattern on simulation
-
 ```
 $ roslaunch gundam_rx78_gazebo gundam_rx78_walk.launch
 ```
 
-```
 # step
 $ rosrun gundam_rx78_control joint_trajectory_client_csv.py `rospack find gundam_rx78_control`/sample/csv/step.csv
 # walk forward

@@ -22,7 +22,7 @@ $ rosdep install -y -r --from-paths src --ignore-src
 $ catkin_make
 $ source devel/setup.bash
 ```
-Para ejecutar una simulación de dinámica de glorieta, puede comenzar`gundam_rx78_world.launch`.
+Para ejecutar una simulación de dinámica de glorieta, puede comenzar se agrega mapa para mejor visualizacion `gundam_rx78_world.launch`.
 
 ```
 $ roslaunch gundam_rx78_gazebo gundam_rx78_world.launch
